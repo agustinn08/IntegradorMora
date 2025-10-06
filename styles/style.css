@@ -63,7 +63,6 @@ main {
 
 #main-carousel img {
   width: 100%;
-  /* height: calc(100dvh - 75px); */
   height: 450px;
   object-fit: cover;
 }
@@ -334,12 +333,9 @@ main {
   margin-top: 10px;
 }
 
-/* ===== RESPONSIVE FIXES ===== */
 
-/* Tablets y menores */
 @media (max-width: 768px) {
   
-  /* Navbar */
   nav {
     flex-direction: column;
     gap: 15px;
@@ -352,8 +348,7 @@ main {
     justify-content: center;
     gap: 10px;
   }
-  
-  /* Admin productos */
+
   .producto {
     flex-direction: column;
     text-align: center;
@@ -373,18 +368,15 @@ main {
     margin-top: 15px;
   }
   
-  /* Modal registro */
   .registro-container {
     padding: 30px 20px;
   }
   
-  /* Main welcome */
   .main-welcome {
     background-size: cover;
     background-position: center;
   }
   
-  /* Títulos */
   .textos-h1 {
     font-size: 2rem;
   }

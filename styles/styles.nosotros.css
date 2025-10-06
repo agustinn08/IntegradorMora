@@ -25,13 +25,12 @@
 }
 
 .about-me {
-  background: transparent; /* Sin fondo */
+  background: transparent; 
   padding: 60px 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Para el contenedor flex */
 .about-me > div {
   display: flex;
   align-items: center;
@@ -68,7 +67,6 @@
   line-height: 1.8;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-title {
     font-size: 2rem;
@@ -82,7 +80,6 @@
     padding: 40px 15px;
   }
   
-  /* En móvil, vuelve a columna */
   .about-me > div {
     flex-direction: column;
     text-align: center;

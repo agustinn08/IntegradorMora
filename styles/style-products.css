@@ -9,7 +9,6 @@ h1 {
   margin: 30px 0 10px 0;
 }
 
-/* Botón agregar producto */
 .boton-agregar {
   display: flex;
   justify-content: center;
@@ -116,12 +115,9 @@ h1 {
 }
 
 
-/* ===== RESPONSIVE FIXES ===== */
 
-/* Tablets y menores */
 @media (max-width: 768px) {
   
-  /* Navbar */
   nav {
     flex-direction: column;
     gap: 15px;
@@ -135,7 +131,6 @@ h1 {
     gap: 10px;
   }
   
-  /* Admin productos */
   .producto {
     flex-direction: column;
     text-align: center;
@@ -155,18 +150,15 @@ h1 {
     margin-top: 15px;
   }
   
-  /* Modal registro */
   .registro-container {
     padding: 30px 20px;
   }
   
-  /* Main welcome */
   .main-welcome {
     background-size: cover;
     background-position: center;
   }
   
-  /* Títulos */
   .textos-h1 {
     font-size: 2rem;
   }
