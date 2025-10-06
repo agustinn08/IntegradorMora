@@ -178,6 +178,11 @@ main {
   opacity: 0.3;
 }
 
+.logo-footer {
+  mix-blend-mode: multiply;
+  background: transparent;
+}
+
 
 .benefits-section {
       padding: 60px 0;
