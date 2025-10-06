@@ -1,0 +1,421 @@
+
+nav{
+    background-color: #f3f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    padding: 10px 20px;
+    
+}
+
+nav a:not(:has(img)) {
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-pink{
+  color: palevioletred;
+}
+
+.text-green{
+  color:  rgb(0, 105, 23);
+}
+
+.textos-h1{
+  font-family: 'Orbitron', 'Franklin Gothic Medium', Arial, sans-serif; ;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.avatares {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+  flex: 1;
+}
+
+.main-p{
+  font-family: 'Rajdhani', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 0;
+}
+
+
+#main-carousel img {
+  width: 100%;
+  /* height: calc(100dvh - 75px); */
+  height: 450px;
+  object-fit: cover;
+}
+
+.main-welcome {
+  background-image: url("https://preview.redd.it/transparent-background-gamer-gumball-i-redrew-gamer-gumball-v0-n7gq15gcvqh91.png?auto=webp&s=e301eb8d298064b8917ca223fe0ddfdd2bca30c4");
+  margin-top: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: right center; 
+}
+.home-section {
+  padding: 4rem 2rem;
+}
+
+.home-section .info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.home-section .section-label {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+}
+
+
+.home-section .section-title {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-container {
+  padding: 2rem;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0; 
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .product-category {
+    color: #999999;
+    
+  }
+  .product-title {
+    font-size: 16px;
+  }
+
+  .sold-by {
+    span {
+      color: #999999;
+    }
+  }
+
+  .product-price {
+    font-size: 18px;
+    font-weight: 700;
+
+    del {
+      color: #999999;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+  }
+
+
+
+.main-footer {
+  background-color: #121212;
+  color: white;
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .social-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 8px;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    
+  }
+}
+
+
+.benefits-section {
+      padding: 60px 0;
+    }
+
+  .benefits-section h2 {
+    font-family: 'Orbitron', 'Franklin Gothic Medium', Arial, sans-serif; 
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ff0000; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+
+  .benefit-card {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    font-size: 1rem;
+    color: #4d4c4c;
+    margin: 0;
+  }
+    
+  .benefit-1 {
+    background: #00ffe0; 
+  }
+
+  .benefit-2 {
+    background: #ff4dff; 
+  }
+
+  .benefit-3 {
+    background: #ff9f00; 
+  }
+
+  .benefit-4 {
+    background: #8c00ff; 
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-10px);
+    border-color: #00b4d8;
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3);
+  }
+
+  .benefit-card i {
+    color: #00b4d8;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card h5 {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .benefit-card p {
+    color: #b0b0b0;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+
+    
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.registro-container {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  border: 3px solid #00ffe0;
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00ffe0;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.btn-cerrar:hover {
+  background: #00ffe0;
+  transform: rotate(90deg);
+}
+
+.registro-container h1 {
+  color: #ff4dff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.registro-container form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.registro-container label {
+  color: #00ffe0;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.registro-container input,
+.registro-container select {
+  padding: 10px;
+  border: 2px solid #00ffe0;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.registro-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4dff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+
+/* Tablets y menores */
+@media (max-width: 768px) {
+  
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  nav > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Admin productos */
+  .producto {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .producto img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  .acciones {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* Modal registro */
+  .registro-container {
+    padding: 30px 20px;
+  }
+  
+  /* Main welcome */
+  .main-welcome {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Títulos */
+  .textos-h1 {
+    font-size: 2rem;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-me-text .me-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textos-h1 {
+    font-size: 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+  }
+  
+  .main-p, .about-text, .about-me-text p {
+    font-size: 1rem;
+  }
+  
+  .registro-container {
+    padding: 20px 15px;
+  }
+  
+  .producto img {
+    max-width: 250px;
+  }
+}

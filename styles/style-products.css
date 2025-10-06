@@ -1,0 +1,203 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0 10px 0;
+}
+
+/* Botón agregar producto */
+.boton-agregar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.boton-agregar button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-agregar button:hover {
+  background-color: #218838;
+}
+
+.productos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.info h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.info p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.acciones button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.acciones button i {
+  font-size: 1rem;
+  color: white;
+}
+
+.acciones button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.acciones button.edit {
+  background-color: #0d6efd;
+}
+
+.acciones button.delete {
+  background-color: #dc3545;
+}
+
+
+/* ===== RESPONSIVE FIXES ===== */
+
+/* Tablets y menores */
+@media (max-width: 768px) {
+  
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  nav > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Admin productos */
+  .producto {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .producto img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  .acciones {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* Modal registro */
+  .registro-container {
+    padding: 30px 20px;
+  }
+  
+  /* Main welcome */
+  .main-welcome {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Títulos */
+  .textos-h1 {
+    font-size: 2rem;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-me-text .me-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textos-h1 {
+    font-size: 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+  }
+  
+  .main-p, .about-text, .about-me-text p {
+    font-size: 1rem;
+  }
+  
+  .registro-container {
+    padding: 20px 15px;
+  }
+  
+  .producto img {
+    max-width: 250px;
+  }
+}

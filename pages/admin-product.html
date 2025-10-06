@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador de Productos</title>
+    <link rel="stylesheet" href="/styles/style-products.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="d-flex justify-content-between align-items-center p-3 text-white"
+      >
+        <div class="logo-container me-3">
+          <img
+            src="https://png.pngtree.com/png-clipart/20210912/original/pngtree-letter-a-logo-png-design-vector-png-image_6760063.jpg"
+            alt="Logo"
+            class="logo"
+            width="60"
+          />
+        </div>
+        <div>
+          <a href="/index.html" class="text-dark text-decoration-none mx-2"
+            >Inicio</a
+          >
+          <a
+            href="#"
+            onclick="abrirModal(); return false;"
+            class="text-dark text-decoration-none mx-2"
+            >Registro</a
+          >
+          <a
+            href="/pages/nosotros.html"
+            class="text-dark text-decoration-none mx-2"
+            >Acerca de nosotros</a
+          >
+          <a
+            href="/pages/admin-product.html"
+            class="text-dark text-decoration-none mx-2"
+            >Admin productos</a
+          >
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="/images/avatar usuario.png"
+              alt="avatar-usuario"
+              class="avatares mx-1"
+              width="40"
+          /></a>
+          <a href="#"
+            ><img
+              src="/images/carrito compras.png"
+              alt="avatar-carrito"
+              class="avatares mx-1"
+              width="40"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>ADMINISTRADOR DE PRODUCTOS</h1>
+
+      <div class="boton-agregar">
+        <button><i class="fa-solid fa-plus"></i> Agregar producto</button>
+      </div>
+
+      <div class="productos-container">
+        <div class="producto">
+          <img
+            src="https://static0.hardcoregamerimages.com/wordpress/wp-content/uploads/2014/01/super-mario-sunshine-wallpaper1.jpg"
+            alt="Super Mario"
+          />
+          <div class="info">
+            <h5>Super Mario Odyssey</h5>
+            <p>Aventura clásica con mundos coloridos y desafíos únicos.</p>
+            <p>
+              <strong>Fecha:</strong> 01-08-2025 |
+              <strong>Precio:</strong> $19.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://blog.playstation.com/tachyon/2025/01/5e99b6d68f18efb251bad8f9051cc2b179bfec67-scaled.jpg"
+            alt="God of War"
+          />
+          <div class="info">
+            <h5>God of War</h5>
+            <p>Acción épica con Kratos enfrentando a los dioses nórdicos.</p>
+            <p>
+              <strong>Fecha:</strong> 05-08-2025 |
+              <strong>Precio:</strong> $59.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://cdn.fastpixel.io/fp/ret_img+v_ce58+w_920+h_465+q_lossless+to_webp/aaagameartstudio.com/wp-content/uploads/2023/04/Hogwarts-Legacy-2023.jpg"
+            alt="Hogwarts"
+          />
+          <div class="info">
+            <h5>Hogwarts Legacy</h5>
+            <p>Explora el mundo mágico y crea tu propio legado en Hogwarts.</p>
+            <p>
+              <strong>Fecha:</strong> 10-08-2025 |
+              <strong>Precio:</strong> $15.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202008/0416/6Bo40lnWU0BhgrOUm7Cb6by3.png"
+            alt="Cyberpunk"
+          />
+          <div class="info">
+            <h5>Cyberpunk 2077</h5>
+            <p>
+              RPG futurista ambientado en una ciudad llena de tecnología y caos.
+            </p>
+            <p>
+              <strong>Fecha:</strong> 12-08-2025 |
+              <strong>Precio:</strong> $39.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
+            alt="RDR2"
+          />
+          <div class="info">
+            <h5>Red Dead Redemption 2</h5>
+            <p>
+              Viaje al salvaje oeste con gráficos impresionantes y gran
+              historia.
+            </p>
+            <p>
+              <strong>Fecha:</strong> 15-08-2025 |
+              <strong>Precio:</strong> $19.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202507/1617/2e757ffb0a6bb4b91af84db64e0183d725e56e5354f45eba.png"
+            alt="FC26"
+          />
+          <div class="info">
+            <h5>FC 26</h5>
+            <p>
+              El clásico juego de fútbol con mejoras gráficas y jugabilidad
+              realista.
+            </p>
+            <p>
+              <strong>Fecha:</strong> 18-08-2025 |
+              <strong>Precio:</strong> $20.00
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202505/3100/ef79f649e45961a7e6342ebf26bc827b8b9603d69b2fdb5c.png"
+            alt="Fortnite"
+          />
+          <div class="info">
+            <h5>Fortnite</h5>
+            <p>Battle Royale gratuito con temporadas y eventos continuos.</p>
+            <p>
+              <strong>Fecha:</strong> 20-08-2025 |
+              <strong>Precio:</strong> $0.00
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202205/2800/W5uSEsW7yefCNTHatS03v5q7.png"
+            alt="COD MW2"
+          />
+          <div class="info">
+            <h5>Call of Duty MW2</h5>
+            <p>
+              Juego de disparos en primera persona con modo multijugador
+              intenso.
+            </p>
+            <p>
+              <strong>Fecha:</strong> 25-08-2025 |
+              <strong>Precio:</strong> $69.99
+            </p>
+          </div>
+          <div class="acciones">
+            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-overlay" id="modalRegistro">
+      <div class="registro-container">
+        <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
+        <h1>Registro</h1>
+        <form id="formulario-registro">
+          <div>
+            <label for="InputNombre">Nombre Completo</label>
+            <input
+              type="text"
+              name="fullname"
+              id="InputNombre"
+              minlength="6"
+              maxlength="100"
+              pattern="^[a-zA-Z\s]+$"
+              placeholder="Fullname"
+              required
+            />
+          </div>
+          <div>
+            <label for="InputEmail">Email</label>
+            <input
+              type="email"
+              name="email"
+              minlength="6"
+              maxlength="100"
+              id="InputEmail"
+              required
+              pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"
+              placeholder="user@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="InputPassword">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="InputPassword"
+              required
+              placeholder="8 characters minimum"
+            />
+          </div>
+          <div>
+            <label for="InputPasswordrepeat">Repetir Contraseña</label>
+            <input
+              type="password"
+              name="password-repeat"
+              id="InputPasswordrepeat"
+              required
+              placeholder="8 characters minimum"
+            />
+          </div>
+          <div>
+            <label for="Inputbirthdate">Fecha de nacimiento</label>
+            <input type="date" name="birthdate" id="Inputbirthdate" required />
+          </div>
+          <div>
+            <label for="InputPais">País</label>
+            <select name="country" id="InputPais" required>
+              <option value="">Selecciona un país</option>
+              <option value="AR">Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="BOL">Bolivia</option>
+              <option value="CHL">Chile</option>
+              <option value="COL">Colombia</option>
+              <option value="PY">Paraguay</option>
+            </select>
+          </div>
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function abrirModal() {
+        document.getElementById("modalRegistro").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function cerrarModal() {
+        document.getElementById("modalRegistro").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      document
+        .getElementById("modalRegistro")
+        .addEventListener("click", function (e) {
+          if (e.target === this) cerrarModal();
+        });
+    </script>
+  </body>
+</html>
